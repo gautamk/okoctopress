@@ -1,0 +1,147 @@
+/**
+ * Typography on bigger screens
+ */
+h1 {
+    font-size: 2.75em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+/**
+ * Show left sidebar
+ */
+header#spine {
+    width: 230px;
+    padding: 75px 40px 0px 40px;
+    position: fixed;
+    min-height: 100%;
+    background-color: $text;
+
+    h4 {
+        font-size: 0.75em;
+        display: block;
+        font-weight: 500;
+        bottom: 75px;
+        color: #999;
+        position: absolute;
+        a {
+            color: #999;
+            border: none;
+            &:hover {
+                color: $link;
+            }
+        }
+    }
+
+    h1#hey {
+        width: 230px;
+        font-size: 2em;
+        letter-spacing: 2px;
+        margin-bottom: 48px;
+        border-bottom: none;
+        padding: 0;
+    }
+
+    p.description, div#recent, div#profiles {
+        display: block;
+    }
+
+    p.description {
+        color: #999;
+        font-weight: 300;
+        font-size: 0.875em;
+        margin-bottom: 10px;
+        a {
+            color: #fff;
+            &:hover {
+                color: $link;
+            }
+        }
+    }
+
+    div#profiles {
+        margin-bottom: 48px;
+        float: none;
+    }
+
+    div#recent {
+
+        h5 {
+            color: #999;
+            font-size: 0.75em;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+
+            a {
+                color: #666;
+                text-transform: none;
+                letter-spacing: normal;
+                border: none;
+
+                &:hover {
+                    color: $link;
+                }
+            }
+        }
+
+        li a {
+            font-size: 0.875em;
+            display: block;
+            width: 200px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            border-top: 1px solid #333;
+            border-bottom: none;
+            padding: 12px 0;
+            color: #f5f5f5;
+            font-weight: 300;
+
+            &:hover {
+                color: $link;
+            }
+        }
+    }
+
+}
+
+/**
+ * Content
+ */
+section#content {
+    margin-left: 310px;
+
+    article {
+        padding: 75px 0px 75px 110px;
+    }
+
+    img {
+        /* images need 8px around */
+        max-width: 584px;
+    }
+
+    div#full-archive {
+        padding: 75px 0px 75px 110px;
+        a {
+            font-size: 1.5em;
+        }
+    }
+
+    section#page {
+        padding: 75px 0px 75px 110px;
+    }
+}
+
+/**
+ * Hide mobile footer
+ */
+#mob-footer {
+    display: none;
+}
+
+section#archive {
+    padding: 75px 0px 75px 110px;
+}

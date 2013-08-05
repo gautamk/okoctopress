@@ -1,0 +1,10 @@
+<div id="recent">
+    <h5 class="heading">Recent <a href="/archive/" id="full-archive">(Full archive &rarr;)</a></h5>
+    <ol>
+        {% for post in site.posts limit:5 %}
+        <li>
+          <a href="{{post.url}}">{{post.title}}</a>
+        </li>
+        {% endfor %}
+    </ol>
+</div>

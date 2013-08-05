@@ -1,0 +1,94 @@
+$codeFonts: Menlo, Monaco, "Consolas", "Courier New", "Courier", "FreeMono", monospace;
+$baseFonts: "Droid Sans",serif;
+$baseSansFonts: "Droid Sans",sans-serif;
+
+.serif {
+    font-family: $baseFonts;
+}
+
+.sans {
+    font-family: $baseSansFonts;
+}
+
+
+body {
+    @extend .sans;
+    line-height: 1.5;
+    color: $text;
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: 900;
+    margin-bottom: 1em;
+    line-height: 1.2;
+    -webkit-font-smoothing: antialiased;
+}
+
+h2 {
+    font-size: 1.25em;
+    font-weight: 300;
+    line-height: 1.25;
+    margin-bottom: 1em;
+    -webkit-font-smoothing: antialiased;
+
+    .tldr {
+        font-weight: bold;
+        font-size: 0.9em;
+    }
+}
+
+h3 {
+    font-size: 1.25em;
+    font-weight: 800;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    -webkit-font-smoothing: antialiased;
+}
+
+h4 {
+    font-size: 1em;
+    font-weight: 800;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+p {
+    line-height: 1.5;
+    font-weight: 300;
+
+    &+p {
+        margin-top: 1.5em;
+    }
+}
+
+a {
+    color: $link;
+    text-decoration: none;
+    border-bottom: 1px #BBB dotted;
+}
+
+em {
+    font-style: italic;
+    font-weight: 500;
+    a {
+        font-style: italic;
+    }
+}
+
+ul {
+    margin-left: 1.3em;
+    margin-bottom: 1.2em;
+    list-style: disc;
+}
+
+li {
+    line-height: 1.6em;
+}
+
+blockquote {
+    padding: 10px 20px;
+    margin: 0 0 20px;
+    border-left: 5px solid $lightrule;
+}

@@ -1,0 +1,36 @@
+/**
+ * Archive
+ */
+section#archive {
+    max-width: 604px;
+
+    h2 {
+        padding: 0px 0px 18px 24px;
+        font-weight: 900;
+    }
+
+    li {
+        border-bottom: 1px solid $lightrule;
+    }
+
+    a {
+        display: block;
+        padding: 24px 12px;
+        border: none;
+        border-left: 10px solid #ffffff;
+        color: $text;
+        font-weight: 400;
+        font-size: 1.25em;
+        -webkit-font-smoothing: antialiased;
+
+        &:hover {
+            border-left-color: $link;
+            font-weight: 800;
+
+            &:after{
+                content: '\2192';
+                margin-left: 10px;
+            }
+        }
+    }
+}

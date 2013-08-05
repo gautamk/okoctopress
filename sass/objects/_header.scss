@@ -1,0 +1,44 @@
+/**
+ * Left sidebar
+ */
+header#spine {
+    @include clearfix;
+    background: $text;
+    color: $non;
+    padding: 15px;
+
+    h4 {
+        display: none;
+    }
+
+    /**
+     * Gravatar
+     */
+    div#avatar {
+        margin-bottom: 40px;
+        img {
+            border-radius: 10px;
+        }
+    }
+
+    /**
+     * Social profiles
+     */
+    div#profiles a, span {
+        color: #999;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 0.75em;
+        border: none;
+        &:hover {
+            color: $link;
+        }
+    }
+
+    /**
+     * Hide all blocks and show depending on size
+     */
+    p.description, div#recent, div#profiles {
+        display: none;
+    }
+}

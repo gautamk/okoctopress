@@ -1,0 +1,22 @@
+/**
+ * Main content
+ */
+section#content {
+    article {
+        padding: 75px;
+    }
+
+    div#full-archive {
+        padding: 75px;
+        a {
+            font-size: 1.25em;
+        }
+    }
+}
+
+/**
+ * Archive
+ */
+section#archive {
+    padding: 75px;
+}

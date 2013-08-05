@@ -1,0 +1,10 @@
+<article>
+  <div class="meta">
+    <time>{{ page.date | date_to_string }}</time>
+  </div>
+  <h1>{{page.title}}</h1>
+  {% if page.tldr %}
+  <h2><span class="tldr">TL;DR</span> {{page.tldr}}</h2>
+  {% endif %}
+  {{content}}
+</article>

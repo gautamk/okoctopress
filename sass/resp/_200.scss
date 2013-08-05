@@ -1,0 +1,42 @@
+h1 {
+    font-size: 1.5em;
+}
+
+/**
+ * Sidebar becomes topbar
+ */
+header#spine {
+
+    h1#hey {
+        float: left;
+        width: 160px;
+    }
+
+    div#profiles {
+        display: block;
+        float: right;
+    }
+}
+
+/**
+ * Main content
+ */
+section#content {
+    article {
+        padding: 35px;
+    }
+
+    div#full-archive {
+        padding: 35px;
+        a {
+            font-size: 1.25em;
+        }
+    }
+}
+
+/**
+ * Archive
+ */
+section#archive {
+    padding: 35px;
+}

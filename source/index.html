@@ -1,0 +1,12 @@
+---
+layout: default
+---
+{% for post in site.posts limit:3 %}
+  {% assign page = post %}
+  {% assign content = post.content %}
+  {% include post.html %}
+  <div class="sep">&nbsp;</div>
+{% endfor %}
+<div id="full-archive">
+    <a href="/archive/">View the full archive &rarr;</a>
+</div>

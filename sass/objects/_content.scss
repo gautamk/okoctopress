@@ -1,0 +1,58 @@
+/**
+ * Main content (common styles)
+ */
+section#content {
+
+    article {
+        max-width: 604px;
+
+        img {
+            padding: 7px;
+            border: 1px solid $rule;
+        }
+
+        a.hn {
+            border-left: 5px solid #ff6600;
+            background-color: #EBEBE1;
+            display: inline-block;
+            text-decoration: none;
+            color: black;
+            padding: 5px;
+            border-bottom: none;
+            font-size: 0.85em;
+            font-family: Verdana;
+            font-weight: bold;
+        }
+    }
+
+    .meta {
+        margin-bottom: 2em;
+        color: #999;
+        a {
+            color: #999;
+            font-weight: 600;
+        }
+        span, time {
+            font-size: 0.875em;
+            font-weight: 300;
+        }
+    }
+
+    div.sep {
+        border-bottom: 4px solid $lightrule;
+    }
+
+    div#full-archive {
+
+        a {
+            font-weight: 900;
+            color: black;
+            text-decoration: none;
+            border: none;
+
+            &:hover {
+                color: $link;
+            }
+        }
+    }
+}

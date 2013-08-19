@@ -12,12 +12,25 @@ header#spine {
     }
 
     /**
-     * Gravatar
+     * Greeting
      */
-    div#avatar {
-        margin-bottom: 40px;
-        img {
-            border-radius: 10px;
+    h1#hey {
+        font-size: 1em;
+        line-height: 1;
+        text-transform: uppercase;
+        margin: 0;
+        font-weight: 900;
+
+        a {
+            display: block;
+            border: none;
+            padding: 0 15px;
+            color: #ffffff;
+            font-weight: 900;
+            border-left: 10px solid #efefef;
+            &:hover {
+                border-left-color: $link;
+            }
         }
     }
 
